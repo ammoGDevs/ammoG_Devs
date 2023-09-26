@@ -16,4 +16,4 @@ This project aims to develop an algorithm which recommends which algorithm to us
   3. Statistical Analysis and Machine Learning: Libraries for building and training the recommendation model (e.g., scikit-learn, TensorFlow).
   4. Algorithm Development: Libraries for implementing and testing compression algorithms (e.g., zlib, specialized image or video compression libraries).
   5. Networking Libraries: Tools for network communication, like sockets or higher-level network libraries.
-![image](https://github.com/shashankhegde06/ammoGDevs/assets/141432130/101faf6f-c957-4fae-8d88-c0bbdd64bab8)
+![image]([https://github.com/shashankhegde06/ammoGDevs/assets/141432130/101faf6f-c957-4fae-8d88-c0bbdd64bab8](https://github.com/shashankhegde06/ammoGDevs/files/12723897/SIH.HACKATHON.PPT.1.1.pptx)https://github.com/shashankhegde06/ammoGDevs/files/12723897/SIH.HACKATHON.PPT.1.1.pptx)
