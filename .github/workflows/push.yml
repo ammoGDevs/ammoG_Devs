@@ -1,5 +1,8 @@
+
 on:
-push:
+  push:
+    branches:
+      - main # Modify this to match your branch
     runs-on: ubuntu-latest
 
     steps:
