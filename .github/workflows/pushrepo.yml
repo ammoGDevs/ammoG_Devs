@@ -1,11 +1,13 @@
-name:Push job
+name: Push job
+
 on:
   push:
     branches:
       - main # Modify this to match your branch
-  jobs:
-    push:
-      runs-on: ubuntu-latest
+
+jobs:
+  push_to_train_repo:
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
