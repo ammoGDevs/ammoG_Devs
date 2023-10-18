@@ -3,7 +3,7 @@ name: Push job
 on:
   push:
     branches:
-      - main # Modify this to match your branch
+      - main
 
 jobs:
   push_to_train_repo:
