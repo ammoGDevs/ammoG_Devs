@@ -13,9 +13,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Verify Token Permissions
-          run: |
-            curl -H "Authorization: Bearer $GITHUB_TOKEN" -X GET https://api.github.com/repos/<owner>/<repo>
-          env:
+        run: |
+            curl -H "Authorization: Bearer $GITHUB_TOKEN" -X GET https://api.github.com/repos/swar41/ammoG_Devs
+        env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Push to Train Repository
         run: |
