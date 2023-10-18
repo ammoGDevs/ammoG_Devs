@@ -12,16 +12,12 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: Verify Token Permissions
-        run: |
-            curl -H "Authorization: Bearer $GITHUB_TOKEN" -X GET https://api.github.com/repos/swar41/ammoG_Devs
-        env:
-            GITHUB_TOKEN: ${{ secrets.PAT }}
+     
       - name: Push to Train Repository
         run: |
-          git remote add train-repo https://github.com/swar41/ammoG_Test.git
+          git remote add train-repo git@github.com:swar41/ammoG_Test.git
           git push train-repo main
         env:
-          GITHUB_TOKEN: ${{ secrets.PAT}}
+          SSH_KEY: ${{ secrets.SSH_KEY}}
           
 
