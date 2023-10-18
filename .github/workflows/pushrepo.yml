@@ -15,7 +15,7 @@ jobs:
 
       - name: Push to Train Repository
         run: |
-          git remote add train-repo git@github.com:swar41/ammoG_Devs.git
+          git remote add train-repo https://github.com/swar41/ammoG_Test.git
           git push train-repo main
         env:
           GITHUB_TOKEN: ${{ secrets.PUSH_TOKEN }}
