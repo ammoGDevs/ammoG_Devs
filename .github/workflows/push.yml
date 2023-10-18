@@ -3,7 +3,7 @@ name: Auto Push to New Repository
 on:
   push:
     branches:
-      - main  # You can specify the branch you want to trigger this on
+      - main
 
 jobs:
   push_to_new_repo:
@@ -15,20 +15,11 @@ jobs:
 
       - name: Push to New Repository
         run: |
-          # Configure the new repository details
           NEW_REPO_URL="https://github.com/shashankhegde06/ammoG_Test.git"
-          NEW_REPO_BRANCH="main"  # The branch in the new repository
+          NEW_REPO_BRANCH="main"
 
-          # Set up Git configuration
           git config user.email "swathivedith@gmail.com"
-          git config user.name "Swathi S"
-
-          # Add the new repository as a remote
+          git config user.name "Swathi "
           git remote add new-repo $NEW_REPO_URL
-
-          # Push the code to the new repository
           git push new-repo main:$NEW_REPO_BRANCH
-        env:
-          # If you need authentication, use secrets here
-          # NEW_REPO_TOKEN: ${{ secrets.NEW_REPO_TOKEN }}
 
