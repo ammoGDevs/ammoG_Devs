@@ -11,13 +11,13 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
      
       - name: Push to Train Repository
         run: |
-          git remote add train-repo git@github.com:swar41/ammoG_Test.git
+          git remote add train-repo https://github.com/swar41/ammoG_Test.git
           git push train-repo main
         env:
-          SSH_KEY: ${{ secrets.SSH_KEY}}
+          SSH_KEY: ${{ secrets.PUSH_TOKEN}}
           
 
