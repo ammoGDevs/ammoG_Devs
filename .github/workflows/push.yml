@@ -1,25 +1,18 @@
-name: Auto Push to New Repository
-
-on:
-  push:
-    branches:
-      - main
-
-jobs:
-  push_to_new_repo:
+push:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Code
+      - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Push to New Repository
+      - name: Set up Git
         run: |
-          NEW_REPO_URL="https://github.com/shashankhegde06/ammoG_Test.git"
-          NEW_REPO_BRANCH="main"
+          git config --global user.name "AllanDza"
+          git config --global user.email "allanferns08@gmail.com"
 
-          git config user.email "swathivedith@gmail.com"
-          git config user.name "Swathi "
-          git remote add new-repo $NEW_REPO_URL
-          git push new-repo main:$NEW_REPO_BRANCH
-
+      - name: Push to Train Repository
+        run: |
+          git remote add train-repo https://github.com/shashankhegde06/ammoG_Test.git
+          git push train-repo main
+        env:
+          GITHUB_TOKEN: ${{ secrets.PUSH_SECRET }}
