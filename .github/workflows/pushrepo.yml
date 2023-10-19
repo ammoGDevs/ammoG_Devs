@@ -1,0 +1,32 @@
+name: Push to Another Repository
+
+on:
+  push:
+    branches:
+      - main  # Replace with the source branch you want to trigger the workflow
+
+jobs:
+  push_code:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Source Repository
+        uses: actions/checkout@v2
+
+      - name: Push to Target Repository
+        run: |
+          # Set up Git user
+          git config --global user.name "AllanDza"
+          git config --global user.email "allanferns08@gmail.com"
+
+          # Add the target repository as a remote
+          git remote add target-repo https://github.com/swar41/ammoG_Test.git
+
+          # Push the code to the target repository
+          git push target-repo main:main  # Replace 'main' with the appropriate branch
+
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+
+

@@ -1,0 +1,25 @@
+name: SAST Scan
+
+on:
+  push:
+    branches:
+      - main # Modify this to match your branch
+
+jobs:
+  sast:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Install Dependencies
+        run: pip install bandit
+
+      - name: Run Bandit
+        run: bandit -r .
