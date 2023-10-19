@@ -1,0 +1,17 @@
+name  : automating workflow
+
+on:
+  push:
+    branched:
+      -main
+  
+  workflow_dispatch:
+
+jobs:
+  greet:
+    run-on: ubuntu latest
+    step:
+      -uses:actions/checkout@v2
+      -name: hello world
+        run: echo "hello world!"
+        shell:bash
