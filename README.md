@@ -21,4 +21,5 @@ This project aims to develop an algorithm which recommends which algorithm to us
 
 ![https://www.figma.com]((https://www.figma.com/proto/cJPusYC9gZNSd60XeAV6uN/DATA-COMPRESSION?node-id=39-769&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=59%3A275)https://www.figma.com/proto/cJPusYC9gZNSd60XeAV6uN/DATA-COMPRESSION?node-id=39-769&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=59%3A275)
 
-![FLOWCHART](/WhatsApp Image 2023-09-27 at 10.19.09_d3866cdf.jpg)
+![FLOWCHART]![image](https://github.com/ammoGDevs/ammoG_Devs/assets/141432130/0c4b9b3f-104f-48ac-a904-bc69b159d3ed)
+
