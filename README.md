@@ -31,31 +31,42 @@ This project aims to develop an algorithm which recommends which algorithm to us
 ```mermaid
 graph TD;
 
-subgraph AGroup
-  A[Start]
-  B
-  C
+subgraph EntityA
+  A[Entity A]
+  B[Attribute 1]
+  C[Attribute 2]
 end
 
-subgraph BGroup
-  D
-  E
-  F
+subgraph EntityB
+  D[Entity B]
+  E[Attribute 1]
+  F[Attribute 2]
 end
 
-subgraph CGroup
-  G
-  H
-  I
-  J
-  K
-  L
-  M
+subgraph EntityC
+  G[Entity C]
+  H[Attribute 1]
+  I[Attribute 2]
 end
 
-AGroup --> BGroup
-AGroup --> CGroup
-CGroup --> BGroup
+subgraph EntityD
+  J[Entity D]
+  K[Attribute 1]
+  L[Attribute 2]
+end
+
+A --> D
+A --> G
+C --> J
+D --> E
+D --> F
+B --> H
+F --> I
+H --> K
+I --> L
+K --> M
+L --> C
+
 ```
 
 
