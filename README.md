@@ -26,6 +26,7 @@ This project aims to develop an algorithm which recommends which algorithm to us
 
 ![FLOWCHART]![image](https://github.com/ammoGDevs/ammoG_Devs/assets/141432130/0c4b9b3f-104f-48ac-a904-bc69b159d3ed)
 
-#flowchart
+# flowchart
+# Mermaid 
 
 
