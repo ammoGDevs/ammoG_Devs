@@ -28,6 +28,7 @@ This project aims to develop an algorithm which recommends which algorithm to us
 
 # flowchart
 # Mermaid 
+```mermaid
 graph TD;
 
 subgraph AGroup
@@ -55,6 +56,6 @@ end
 AGroup --> BGroup
 AGroup --> CGroup
 CGroup --> BGroup
-
+```
 
 
