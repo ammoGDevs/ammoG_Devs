@@ -28,23 +28,33 @@ This project aims to develop an algorithm which recommends which algorithm to us
 
 # flowchart
 # Mermaid 
-```mermaid
 graph TD;
-A-->B;
-A-->C;
-C-->D;
-D-->B;
-B-->E;
-B-->F;
-E-->G;
-G-->B;
-F-->H;
-H-->I;
-I-->J;
-J-->K;
-K-->L;
-L-->M;
-M-->C;
-```
+
+subgraph AGroup
+  A[Start]
+  B
+  C
+end
+
+subgraph BGroup
+  D
+  E
+  F
+end
+
+subgraph CGroup
+  G
+  H
+  I
+  J
+  K
+  L
+  M
+end
+
+AGroup --> BGroup
+AGroup --> CGroup
+CGroup --> BGroup
+
 
 
