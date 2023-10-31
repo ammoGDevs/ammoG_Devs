@@ -31,6 +31,20 @@ This project aims to develop an algorithm which recommends which algorithm to us
 ```mermaid
 graph TD;
 A-->B;
+A-->C;
+C-->D;
+D-->B;
+B-->E;
+B-->F;
+E-->G;
+G-->B;
+F-->H;
+H-->I;
+I-->J;
+J-->K;
+K-->L;
+L-->M;
+M-->C;
 ```
 
 
