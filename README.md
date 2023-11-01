@@ -30,7 +30,7 @@ This project aims to develop an algorithm which recommends which algorithm to us
 # Mermaid 
 ```mermaid
 graph LR;
-System enables User --> Configure Network parameter Ratio
+System enables User-->Configure Network parameter Ratio
 
 
 ```
