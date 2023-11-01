@@ -30,9 +30,9 @@ This project aims to develop an algorithm which recommends which algorithm to us
 # Mermaid 
 ```mermaid
 graph LR;
-A-->B;
+A-->B
 graph TD;
-A-->C;
+A-->C
 
 
 ```
