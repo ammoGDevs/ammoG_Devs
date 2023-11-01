@@ -29,43 +29,9 @@ This project aims to develop an algorithm which recommends which algorithm to us
 # flowchart
 # Mermaid 
 ```mermaid
-graph TD;
+flowchart LR;
+System enables User --> Configure Network parameter Ratio
 
-subgraph EntityA
-  A[Entity A]
-  B[Attribute 1]
-  C[Attribute 2]
-end
-
-subgraph EntityB
-  D[Entity B]
-  E[Attribute 1]
-  F[Attribute 2]
-end
-
-subgraph EntityC
-  G[Entity C]
-  H[Attribute 1]
-  I[Attribute 2]
-end
-
-subgraph EntityD
-  J[Entity D]
-  K[Attribute 1]
-  L[Attribute 2]
-end
-
-A --> D
-A --> G
-C --> J
-D --> E
-D --> F
-B --> H
-F --> I
-H --> K
-I --> L
-K --> M
-L --> C
 
 ```
 
