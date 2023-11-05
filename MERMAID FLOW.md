@@ -1,3 +1,5 @@
+```mermaid
+
 %%{init: {'theme':'neutral'}}%%
   
 flowchart TD
@@ -21,3 +23,4 @@ flowchart TD
     CHANGE THE OUTCOME]
     K-->L[REDIRECTS THEM TO RESET THE PARAMETERS]
     L-->B
+```
