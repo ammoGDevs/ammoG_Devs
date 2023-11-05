@@ -1,6 +1,6 @@
 ```mermaid
 
-%%{init: {'theme':'neutral'}}%%
+
   
 flowchart TD
     A[WORKFLOW]
