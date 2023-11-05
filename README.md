@@ -28,13 +28,4 @@ This project aims to develop an algorithm which recommends which algorithm to us
 
 # flowchart
 # Mermaid 
-```mermaid
-graph LR;
-A-->B
-graph TD;
-A-->C
-
-
-```
-
-
+https://www.mermaidchart.com/raw/a5ddf3a0-9d5c-4788-90a1-d0aedaf20338?version=v0.1&theme=light&format=svg
