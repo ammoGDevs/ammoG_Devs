@@ -21,6 +21,30 @@ This project aims to develop an algorithm which recommends which algorithm to us
 
 <img width="709" alt="image" src="https://github.com/ammoGDevs/ammoG_Devs/assets/141432130/ad39cea9-89cd-4532-9f9f-dd605f96e500">
 
+flowchart USING MERMAID
+%%{init: {'theme':'neutral'}}%%
+  
+flowchart TD
+    A[WORKFLOW]
+    A-->B{ENABLES USER 
+    CONFIGURE PARAMETERS}
+    B-->M[STEP 2 SYSTEM THEN MONITORS THE NETWORK ANALYSIS]
+    M-->C[REDIRECTS THE USER TO 
+    ENTER THE DATA TO TRANSFER]
+    C-->E[INVALID FILE FORMAT]
+    E-->F[ASKS THE USER TO ENTER AN ACCEPTABLE FILE]
+    F-->C
+   C-->G[STEP 3
+   SYSTEM MAKES AN INFORMED 
+   DECISON ON USER'S PREFERENCE]
+   G-->H[SUGGEST AN OPTIMAL COMPRESSION
+    ALGORITHM]
+    H-->I[PROVIDES REASON FOR THE OUTPUT]
+    I-->J[PROVIDES A GRAPHICAL REPRESENTATION]
+    J-->K[ASKS THE USER, IF THEY WANT TO 
+    CHANGE THE OUTCOME]
+    K-->L[REDIRECTS THEM TO RESET THE PARAMETERS]
+    L-->B
 
 ![https://www.figma.com]((https://www.figma.com/proto/cJPusYC9gZNSd60XeAV6uN/DATA-COMPRESSION?node-id=39-769&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=59%3A275)https://www.figma.com/proto/cJPusYC9gZNSd60XeAV6uN/DATA-COMPRESSION?node-id=39-769&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=59%3A275)
 
