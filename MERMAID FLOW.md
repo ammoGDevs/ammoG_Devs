@@ -1,4 +1,4 @@
-
+```mermaid
   
 flowchart TD
     A[WORKFLOW]
@@ -21,3 +21,4 @@ flowchart TD
     CHANGE THE OUTCOME]
     K-->L[REDIRECTS THEM TO RESET THE PARAMETERS]
     L-->B
+```
