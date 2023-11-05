@@ -1,6 +1,6 @@
 ```mermaid
   
-flowchart TD
+graph TD
     A[WORKFLOW]
     A-->B{ENABLES USER 
     CONFIGURE PARAMETERS}
