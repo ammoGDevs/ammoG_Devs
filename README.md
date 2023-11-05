@@ -22,8 +22,8 @@ This project aims to develop an algorithm which recommends which algorithm to us
 <img width="709" alt="image" src="https://github.com/ammoGDevs/ammoG_Devs/assets/141432130/ad39cea9-89cd-4532-9f9f-dd605f96e500">
 
 flowchart USING MERMAID
+
 %%{init: {'theme':'neutral'}}%%
-  
 flowchart TD
     A[WORKFLOW]
     A-->B{ENABLES USER 
