@@ -7,12 +7,5 @@ A Django-based web application for implementing data compression in a backbone n
 
 we are developing a tool that will efficiently recommend the data compression algorithm preferable for the user input of file type and size to be sent and his preference, ultimately optimize network performance. The software will be designed to adapt to the unique characteristics of the network environment, ensuring seamless integration and minimal disruption to existing network operations!
 
-## Installation
 
-### Prerequisites
-
-- Python 3.6+
-- Django 3.0+
-- AWS account with necessary permissions
-- Terraform installed
 
