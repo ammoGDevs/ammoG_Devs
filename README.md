@@ -16,31 +16,7 @@ we are developing a tool that will efficiently recommend the data compression al
 - AWS account with necessary permissions
 - Terraform installed
 
-### Installation Steps
 
-1. Clone the repository:
-
-   ```shell
-   git clone https://github.com/your-username/data-compression-app.git
-   cd data-compression-app
-   
-2. Create a virtual environment and activate it:
-
-   ```shell
-   python -m venv venv
-   source venv/bin/activate   # On Windows, use venv\Scripts\activate
-
-3. Install Python dependencies:
-
-   ```shell
-   pip install -r requirements.txt
-
- -Configure AWS access credentials.
- 
- - Set up your Django project settings for production, including database configuration, 
-   static files, and media settings.
- 
- - Create a GitHub Actions workflow for CI/CD deployment.
 
  ### Usage 
 1. Create a virtual environment and activate it:
