@@ -1,31 +1,101 @@
-# ammoGDevs
-# Recommendation Algorithm for Data Compression
+# CompMast_DEV
 
-## Project Description
-This project aims to develop an algorithm which recommends which algorithm to use inorder to compress the data based on the file type,size and other preferences given by the user for the data which flows through the backbone network. 
-## Project Structure
+    
+# Data Compression for Backbone Network
 
-- `src/` : Contains the source code for the recommendation algorithm.
-- `examples/` : Provides sample code and scenarios for using the algorithm.
-- `tests/` : Contains test cases and sample data for testing.
+A Django-based web application for implementing data compression in a backbone network. This project aims to efficiently compress data, reduce network bandwidth requirements, and optimize network performance in alignment with the specific requirements and constraints of the network environment.
 
-## Dependencies
+we are developing a tool that will efficiently recommend the data compression algorithm preferable for the user input of file type and size to be sent and his preference, ultimately optimize network performance. The software will be designed to adapt to the unique characteristics of the network environment, ensuring seamless integration and minimal disruption to existing network operations!
 
-- 1. Programming Language and Environment: Choose a suitable programming language (e.g., Python) and set up the development environment.
-  2. Data Collection and Processing: Libraries for handling different file types and extracting metadata from data packets.
-  3. Statistical Analysis and Machine Learning: Libraries for building and training the recommendation model (e.g., scikit-learn, TensorFlow).
-  4. Algorithm Development: Libraries for implementing and testing compression algorithms (e.g., zlib, specialized image or video compression libraries).
-  5. Networking Libraries: Tools for network communication, like sockets or higher-level network libraries.
+## Installation
 
-![https://github.com]([https://github.com/shashankhegde06/ammoGDevs/assets/141432130/101faf6f-c957-4fae-8d88-c0bbdd64bab8])
+### Prerequisites
 
-<img width="709" alt="image" src="https://github.com/ammoGDevs/ammoG_Devs/assets/141432130/ad39cea9-89cd-4532-9f9f-dd605f96e500">
+- Python 3.6+
+- Django 3.0+
+- AWS account with necessary permissions
+- Terraform installed
+
+### Installation Steps
+
+1. Clone the repository:
+
+   ```shell
+   git clone https://github.com/your-username/data-compression-app.git
+   cd data-compression-app
+   
+2. Create a virtual environment and activate it:
+
+   ```shell
+   python -m venv venv
+   source venv/bin/activate   # On Windows, use venv\Scripts\activate
+
+3. Install Python dependencies:
+
+   ```shell
+   pip install -r requirements.txt
+
+ -Configure AWS access credentials.
+ 
+ - Set up your Django project settings for production, including database configuration, 
+   static files, and media settings.
+ 
+ - Create a GitHub Actions workflow for CI/CD deployment.
+
+ ### Usage 
+1. Create a virtual environment and activate it:
+
+   ```shell
+   python manage.py runserver
+
+2. Access the web application at http://localhost:8000.
 
 
-![https://www.figma.com]((https://www.figma.com/proto/cJPusYC9gZNSd60XeAV6uN/DATA-COMPRESSION?node-id=39-769&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=59%3A275)https://www.figma.com/proto/cJPusYC9gZNSd60XeAV6uN/DATA-COMPRESSION?node-id=39-769&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=59%3A275)
+### Getting Started
+- Clone the repository and follow the installation steps.
 
-![FLOWCHART]![image](https://github.com/ammoGDevs/ammoG_Devs/assets/141432130/0c4b9b3f-104f-48ac-a904-bc69b159d3ed)
+- Run the Django development server as mentioned in the "Usage" section.
 
-# flowchart
-# Mermaid 
-https://www.mermaidchart.com/raw/a5ddf3a0-9d5c-4788-90a1-d0aedaf20338?version=v0.1&theme=light&format=svg
+- Customize the Django application as needed for your network environment.
+
+### Features
+- Efficient data compression for various file types.
+
+- Reduction in network bandwidth requirements.
+
+- Optimized network performance.
+
+- Security measures to protect sensitive data during compression and transmission.
+
+
+## Authors
+- Allan Dzouza (eng21ct0002@dsu.edu.in)
+
+- Hemal (eng21ct0009@dsu.edu.in)
+
+- Jaice Joshep (eng21ct0011@dsu.edu.in)
+
+- Shashank Hegde (eng21ct00036@dsu.edu.in)
+
+- Swaroop (eng21ct00041@dsu.edu.in)
+
+- Swathi S (eng21ct00043@dsu.edu.in)
+
+# Flowchart
+```mermaid
+flowchart TD
+A[WORKFLOW]
+A-->B{ENABLES USER CONFIGURE PARAMETERS};
+B-->M[STEP 2 SYSTEM THEN MONITORS THE NETWORK ANALYSIS];
+M-->C[REDIRECTS THE USER TO ENTER THE DATA TO TRANSFER];
+C-->E[INVALID FILE FORMAT];
+E-->F[ASKS THE USER TO ENTER AN ACCEPTABLE FILE];
+F-->C;
+C-->G[STEP 3 SYSTEM MAKES AN INFORMED DECISON ON USER'S PREFERENCE];
+G-->H[SUGGEST AN OPTIMAL COMPRESSION ALGORITHM];
+H-->I[PROVIDES REASON FOR THE OUTPUT];
+I-->J[PROVIDES A GRAPHICAL REPRESENTATION];
+J-->K[ASKS THE USER, IF THEY WANT TO CHANGE THE OUTCOME];
+K-->L[REDIRECTS THEM TO RESET THE PARAMETERS];
+L-->B;
+```
