@@ -1,0 +1,22 @@
+name: SAST Scan
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  bandit_scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set Git identity
+        run: |
+          git config --global user.email "allanferns08@gmail.com"
+          git config --global user.name "AllanDza"
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install Bandit
+        run: |
+          pip install bandit
+          bandit -r .
